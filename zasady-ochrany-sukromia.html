@@ -20,7 +20,7 @@
 <body>
 
 <h1>1% Better – Zásady ochrany súkromia</h1>
-<p class="datum">Platné od 9. septembra 2026 · posledná úprava 24. septembra 2026</p>
+<p class="datum">Platné od 9. septembra 2026 · posledná úprava 7. októbra 2026</p>
 
 <p><strong>1% Better</strong> (ďalej „aplikácia“) je osobný denník návykov, tréningu,
 spánku a sústredenia. Aplikáciu vyvíja Samuel Zubor, kontakt:
@@ -38,7 +38,6 @@ v systémovej zálohe Androidu, ak ju máš zapnutú – pozri Zálohovanie).</p
   <li>tréningy, úlohy, zápisy v denníku, náladu, spánok a šlofíky,</li>
   <li>osobné rekordy a míľniky,</li>
   <li>počítadlo abstinencie,</li>
-  <li>zoznam aplikácií, ktoré si vybral na blokovanie, a časy blokovania,</li>
   <li>nastavenia (téma, jazyk, rozloženie nástenky, časy notifikácií).</li>
 </ul>
 <p>Všetky tieto údaje sú uložené lokálne v úložisku aplikácie na tvojom zariadení
@@ -52,26 +51,16 @@ technicky nemôže nikam nič odoslať. Na svoju činnosť internet nepotrebuje.
 
 <h2>Oprávnenia a načo sú</h2>
 <ul>
-  <li><strong>Prístup k údajom o používaní (PACKAGE_USAGE_STATS)</strong> – aby
-      aplikácia vedela, ktorá aplikácia je práve v popredí, a mohla zablokovať tú,
-      ktorú si si sám zvolil. Toto oprávnenie zapína používateľ ručne v systémových
-      nastaveniach a dá sa kedykoľvek vypnúť. Údaje o používaní sa vyhodnocujú
-      priamo v telefóne, nikam sa neukladajú ani neodosielajú.</li>
-  <li><strong>Zobrazenie cez iné aplikácie (SYSTEM_ALERT_WINDOW)</strong> – aby sa
-      dala zobraziť blokovacia obrazovka.</li>
-  <li><strong>Služba na popredí (FOREGROUND_SERVICE, špeciálne použitie)</strong> –
-      blokovanie musí bežať aj vtedy, keď je aplikácia zavretá. Služba je viditeľná
-      ako trvalá notifikácia.</li>
-  <li><strong>Viditeľnosť nainštalovaných aplikácií</strong> – aby sa dal zobraziť
-      zoznam aplikácií, z ktorých si vyberáš tie na blokovanie. Aplikácia vidí len
-      aplikácie spustiteľné z plochy a tento zoznam neopúšťa zariadenie.</li>
+  <li><strong>Viditeľnosť Instagramu</strong> – aby okno na zdieľanie obrázka (napr. motivácie alebo tréningu)
+      ponúklo navrchu „Instagram Story“. Aplikácia zisťuje len to, či je Instagram
+      nainštalovaný, nič iné o ňom nevie.</li>
   <li><strong>Notifikácie (POST_NOTIFICATIONS)</strong> – pripomienky a motivačné
       hlášky, ktoré si sám nastavíš. Plánujú sa lokálne v telefóne.</li>
   <li><strong>Presné budíky (SCHEDULE_EXACT_ALARM)</strong> – aby pripomienky prišli
       v čase, ktorý si zadal. Ak toto oprávnenie nepovolíš, aplikácia funguje ďalej,
       len notifikácie môžu prísť s malým oneskorením.</li>
   <li><strong>Spustenie po reštarte (RECEIVE_BOOT_COMPLETED)</strong> – aby sa
-      blokovanie a pripomienky obnovili po reštarte telefónu.</li>
+      pripomienky obnovili po reštarte telefónu.</li>
 </ul>
 
 <h2>Zálohovanie a export</h2>
@@ -110,7 +99,7 @@ dátumom platnosti.</p>
 <hr>
 
 <h1 id="en">1% Better – Privacy Policy</h1>
-<p class="datum">Effective 9 September 2026 · last updated 24 September 2026</p>
+<p class="datum">Effective 9 September 2026 · last updated 7 October 2026</p>
 
 <p><strong>1% Better</strong> (the “app”) is a personal tracker for habits, training,
 sleep and focus. The app is developed by Samuel Zubor, contact:
@@ -124,8 +113,7 @@ backup, if you have it switched on – see Backup).</p>
 
 <h2>What data the app processes</h2>
 <p>The app stores only what you enter yourself: workouts, tasks, journal entries,
-mood, sleep and naps, personal records, a sobriety counter, the list of apps you
-chose to block together with their blocking schedule, and your settings (theme,
+mood, sleep and naps, personal records, a sobriety counter and your settings (theme,
 language, dashboard layout, notification times).</p>
 <p>All of this is stored locally in the app's storage on your device (IndexedDB).
 None of it is sent anywhere – not to the developer, not to any third party. The app
@@ -137,24 +125,16 @@ unable to send anything anywhere. It does not need the internet to work.</p>
 
 <h2>Permissions and why they are needed</h2>
 <ul>
-  <li><strong>Usage access (PACKAGE_USAGE_STATS)</strong> – so the app can tell which
-      app is currently in the foreground and block the ones you selected. You grant
-      this manually in system settings and can revoke it at any time. Usage data is
-      evaluated on the device only; it is never stored or transmitted.</li>
-  <li><strong>Display over other apps (SYSTEM_ALERT_WINDOW)</strong> – to show the
-      blocking screen.</li>
-  <li><strong>Foreground service (special use)</strong> – blocking must keep working
-      while the app is closed. The service is visible as a persistent notification.</li>
-  <li><strong>Installed app visibility</strong> – to show the list of apps you pick
-      from. The app only sees apps that can be launched from the home screen, and the
-      list never leaves the device.</li>
+  <li><strong>Instagram visibility</strong> – so the share sheet for an image (for example a quote
+      or a workout) can offer “Instagram Story” at the top. The app only checks whether
+      Instagram is installed and knows nothing else about it.</li>
   <li><strong>Notifications (POST_NOTIFICATIONS)</strong> – reminders and motivational
       quotes you schedule yourself. They are scheduled locally on the device.</li>
   <li><strong>Exact alarms (SCHEDULE_EXACT_ALARM)</strong> – so reminders arrive at the
       time you set. If you do not grant it, the app keeps working; notifications may
       simply arrive slightly late.</li>
-  <li><strong>Start after reboot (RECEIVE_BOOT_COMPLETED)</strong> – to restore blocking
-      and reminders after the phone restarts.</li>
+  <li><strong>Start after reboot (RECEIVE_BOOT_COMPLETED)</strong> – to restore reminders
+      after the phone restarts.</li>
 </ul>
 
 <h2>Backup and export</h2>
